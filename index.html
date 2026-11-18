@@ -1,18 +1,34 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Login</title>
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafio Login</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
 </head>
-<body>
-  <form id="loginForm" class="login-box">
-    <h2>Entrar</h2>
-    <input type="text" id="usuario" placeholder="Usuário" required>
-    <input type="password" id="senha" placeholder="Senha" required>
-    <button type="submit">Acessar</button>
-  </form>
-  <script src="script.js"></script>
+<body class="login">
+    <main class="login-container">
+        <div class="logo"></div>
+
+        <h2>bem-Vindo!</h2>
+        <p class="subtitulo">Descubra a senha: </p>
+
+        <form id="formLogin">
+            <div class="campo">
+                <label for="usuario">Usuário: </label>
+                <input type="text" id="usuario" placeholder="Digite seu usuário" required>
+            </div>
+
+                <div class="campo">
+                <label for="senha">Senha: </label>
+                <input type="password" id="senha" placeholder="Digite sua Senha" required>
+            </div>
+
+
+              <button type="submit" class="botao-principal">Entrar-se</button>
+        </form>
+        <p class="rodape">Sistema de Cadastro de Produto</p>
+    </main>
 </body>
 </html>
